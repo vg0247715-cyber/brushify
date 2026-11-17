@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brushify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <center>
+        <h1>BRUSHIFY</h1>
+        <div id ="editor" contenteditable="true">
+       
+        </div>
+        <br>
+        <button style ="background-color: red;">download</button>
+        <div id = "second">
+        <div>
+            <h2>Select a background colour</h2>
+            <button onclick="backgroundColor('red')" id ="bckgrd" style ="background-color: red;"></button>
+           <button  onclick="backgroundColor('pink')" id ="bckgrd" style ="background-color: pink;"></button>
+           <button  onclick="backgroundColor('navy')" id ="bckgrd" style ="background-color: navy;"></button>
+          <button  onclick="backgroundColor('salmon')" id ="bckgrd" style ="background-color: salmon;"></button> 
+          <button  onclick="backgroundColor('grey')" id ="bckgrd" style ="background-color: grey;"></button>
+        </div>
+        <div>
+            <h2>Select a text colour</h2>
+            <button onclick="textColor('violet')" id = "txt" style = "background-color:violet ;"></button>
+            <button onclick="textColor('orange')" id = "txt" style = "background-color:orange ;"></button>
+            <button onclick="textColor('green')" id = "txt" style = "background-color:green ;"></button>
+            <button onclick="textColor('blue')" id = "txt" style = "background-color:blue ;"></button>
+        </div>
+        <div> 
+            <h2>Select a font</h2>
+            <button onclick="fontFamily('sans-serif')" id = "fnt" style ="font-family:sans-serif">hello</button>
+            <button onclick="fontFamily('serif')" id = "fnt" style ="font-family:serif">hello</button>
+            <button onclick="fontFamily('cursive')" id = "fnt" style ="font-family:cursive">hello</button>
+            <button onclick="fontFamily('fantasy')" id = "fnt" style ="font-family:fantasy">hello</button>
+
+        </div>
+        <div>
+    </center>
+    <script>
+        function backgroundColor(clr){
+            document.getElementById("editor").style.backgroundColor=clr;
+        }
+         function textColor(clr){
+            document.getElementById("editor").style.color=clr;
+        }
+         function fontFamily(clr){
+            document.getElementById("editor").style.fontFamily=clr;
+        }
+
+    </script>
+</body>
+</html>

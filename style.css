@@ -1,0 +1,37 @@
+#editor{
+    height:400px;
+    width: 300px;
+    border:2px solid black;
+    font-size: 20px;
+
+      display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#second{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#bckgrd{
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+}
+#txt{
+     height:20px;
+    width:20px;
+    border-radius: 50%;
+
+}
+#fnt{
+        height:35px;
+        width: 40px;
+        background-color: transparent;
+        border: none;
+        font-size: 15px;
+        
+}
